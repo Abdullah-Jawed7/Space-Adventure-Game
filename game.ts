@@ -182,27 +182,30 @@ while (play) {
             choices: ["Sword", "Laser Gun", "AI Missiles"],
           });
           if (weapon.Select === "Sword") {
-            console.log(attack.Sword());
+            attack.Sword();
             console.log(chalk.red(name.Name, "your health is reduced by Alien Attack"));
             console.log(chalk.red(name.Name, " Health :",clone.health -=Math.floor( Math.random() * 5) ));
           } else if (weapon.Select === "Laser Gun") {
             
-            console.log(attack.laserGun());
+            attack.laserGun();
             console.log(chalk.red(name.Name, "your health is reduced by Alien Attack"));
             console.log(chalk.red(name.Name, " Helth :",clone.health -=Math.floor( Math.random() * 20) ));
           } else if (weapon.Select === "AI Missiles") {
-            console.log(attack.Missile());
+            attack.Missile();
             console.log(chalk.red(name.Name, "your health is reduced by Alien Attack"));
             console.log(chalk.red(name.Name, " Helth :",clone.health -=Math.floor( Math.random() * 40) ));
           }
           if (attack.health <= 0) {
             fight = false;
             fightt = false;
+            console.log(`\n`);
+            
             console.log(chalk.blue(name.Name, ", you are succesfully defeated a Alien"));
           }else if (clone.health <= 0){
               a1 = false;
               fight = false;
               fightt = false;
+            console.log(`\n`);
 
             console.log(chalk.blue("You lost the Game "));
           }

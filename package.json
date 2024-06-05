@@ -8,7 +8,7 @@
   },
   "name": "@oneandonly/space-adventure-game",
   "description": "A Wonderful CLI based  Adventure Game",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "index.js",
   "type": "module",
   "bin": "game.js",
